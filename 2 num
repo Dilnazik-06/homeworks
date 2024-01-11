@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+	int d,f;
+	cin >> d>> f;
+	int res = 0;
+	for (int s = d; s < f; s++) {
+		if (s % 2 == 0)
+			res = res + s;
+	}
+		
+	cout << res;
+}
