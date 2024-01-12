@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	setlocale(LC_ALL, "ru");
+	int d;
+	cin >> d;
+	int del=0;
+	
+	for (int s = 1; s < d; s++)
+		if (d % s == 0)
+			del = del + s;
+	if (del == d)
+		cout << "совершенное число";
+	else
+		cout << "несовершенное";
+	cout << del;
+
+	
+		
+}
