@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "ru");
+	int d;
+	cin >> d;
+	int res = 0;
+	while (d > 0) {
+		res += (d % 10);
+		d = d / 10;
+	}
+	cout << res;
+	
+
+
+	
+		
+}
