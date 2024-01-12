@@ -1,0 +1,50 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int squarePants(int a) {
+    int res = a * a;
+    return res;
+}
+int rectangle(int a, int g) {
+    int res = a * g;
+    return res;
+}
+int patric(int d, int s, int r) {
+        int p = (d + s + r) / 2;
+        return sqrt(p * (p - d) * (p - s) * (p - r));
+    }
+
+
+int main() {
+    setlocale(LC_ALL, "RU");
+    int d;
+    int s;
+    int j;
+    int pup;
+    cout << "выберите фигуру\n 1-квадрат\t 2-прямоугольник\t 3-треугольник\n";
+    cin >> pup;
+
+    cout << "введите числа\n"; 
+    if (pup == 1) {
+        cout << "первая сторона\n";
+        cin >> d;
+        cout << squarePants(d) << endl;
+    }
+    if (pup == 2) {
+        cout << "первая сторона\n";
+        cin >> d;
+        cout << "вторая сторона\n";
+        cin >> s;
+        cout << rectangle(d, s)<<endl;
+          
+    }
+    if (pup == 3) {
+        cout << "первая сторона\n";
+        cin >> d;
+        cout << "вторая сторона\n";
+        cin >> s;
+        cout << "третья сторона\n";
+        cin >> j;
+        cout << patric(d, s, j) << endl;
+    }
+}
