@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+	int d;
+	cin >> d;
+	int del=0;
+	
+	for (int s = 1; s <= d; s++)
+		if (d % s == 0)
+			del++;
+	if (del == 2)
+		cout << "prime number";
+	else
+		cout << " not prime num";
+	cout << del;
+		
+}
