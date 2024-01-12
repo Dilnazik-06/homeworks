@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "RU");
+    int num;
+    cin >> num;
+    string res;
+    for (int d=1; d<=num; d++) {
+        for (int i=1; i <=d; i++) {
+            cout << d;
+        }
+        cout << endl;
+    }
+    
+    return 0;
+}
