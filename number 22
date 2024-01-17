@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "ru");
+	cout << "выберите цвет\n"<< "G"<<" "<<"Y"<<" "<<"R" <<endl;
+	char d;
+	cin >> d;
+	if (d == 'G') {
+		cout << "let's go";
+	}
+	else if (d == 'Y') {
+		cout << "get ready";
+	}
+	else if (d == 'R') {
+		cout << "wait";
+	}
+	else 
+		cout << "wrong";
+
+
+}
