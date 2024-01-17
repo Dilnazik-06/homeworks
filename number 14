@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+int main() {
+	setlocale(LC_ALL, "ru");
+	int d;
+	cin >> d;
+	string l = to_string(d);
+
+	int res = 0;
+	while (d > 0) {
+		res += pow(d % 10, l.length());
+		d = d / 10;
+
+
+	}
+	cout << res;
+
+
+
+
+}
