@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+int main() {
+	int fff = 0;
+	int res;
+
+	for (int f = 1000; f <= 32000; f++) {
+		res = 0;
+		fff = 0;
+
+		for (int d = 1; d <= f; d++)
+			if (f % d == 0)
+				fff++;
+		if (fff == 2) {
+			for (int l = f; l > 0; l /= 10) {
+				res *= 10;
+				res += (l % 10);
+			}
+			
+
+
+			if (f == res)
+				cout << res << endl;
+		}
+	}
+}
